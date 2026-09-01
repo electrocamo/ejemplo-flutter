@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'IUE Flutter App2',
+      title: 'IUE Flutter App1',
       home: Scaffold(
         body: Padding(
           padding: const EdgeInsets.all(20.0),

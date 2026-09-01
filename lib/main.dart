@@ -4,14 +4,36 @@ void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
+      debugShowCheckedModeBanner: false,
+      title: 'IUE Flutter App',
       home: Scaffold(
-        appBar: AppBar(title: const Text('Material App Bar 1')),
-        body: const Center(child: Text('Hello World DEVELOP')),
+        body: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Column(
+                children: [
+                  Text("Universidad de envigado"),
+                  Text("La mejor universidad del mundo"),
+                ],
+              ),
+              Image.asset('assets/logoIue.jpg'),
+              Column(
+                children: [
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: Text("Iniciar Sesión"),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
